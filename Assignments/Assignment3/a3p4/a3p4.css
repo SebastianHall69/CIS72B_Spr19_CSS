@@ -1,0 +1,136 @@
+@charset "utf-8";
+/* A3P5 Stylesheet Sample */
+
+header, nav, section, footer, article {     /* leave this alone */
+	display: block;
+}
+body {                       /* change background, color, and font  */
+	background: #000;
+	color: #ffa500;
+	font-family: "Fresh Marker", Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	margin: 0;
+	padding: 0;
+    letter-spacing: 1px
+}
+#pagewrap {	                 /* change background, adjust width as needed */
+	width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+	background: url('leopard_pattern.png');
+    box-shadow: 0 0 400px 50px #6a0088;
+}
+header {                     /* change background, color, whatever else you want */
+	background: url('leopard_pattern.png');
+	color: #FFFFCC;
+	margin: 0;
+	padding: 2em 2em;
+}
+#main {                      /* change background, whatever else you want   */
+	width: 700px;
+	float: left;
+	background: linear-gradient(to right, black, black, black,  rgba(106, 0, 136, 0.97));
+	padding: 0em;
+    font-size: 120%;
+    
+}
+#main > * {                   /* adjust as needed  */
+	margin-left: 2em;
+}
+h1 {                          /* adjust as needed  */
+	margin: 0;
+}
+h1, h2, h3, h4 {              /* change fonts to fit your theme  */
+	font-family: Georgia, "Times New Roman", Times, serif;
+	margin-bottom: 0;
+}
+p {                           /* adjust as needed  */
+	margin-top: 5px;
+}
+nav {                         /* change background, adjust width, padding as needed  */
+	width: 200px;
+	float: left;
+	background: url('leopard_pattern.png');
+	padding-top: 4em;
+}
+nav ul {
+	list-style-type: none;     /* this turns off bullets on navigation list   */
+	line-height: 1.4;          /* adjust as needed for link spacing */
+	padding-left:0;
+}
+nav li {                      /* change background, adjust others as needed  */
+	margin: 0;
+    padding: 5px;
+	font-size: 95%;
+	background-image: url('money_repeat_bg.png');
+    background-size: contain;
+	text-align: center;
+}
+nav a {                       
+	text-decoration: none;     /* turns off underlining on links within nav bar  */
+    color: black;
+    font-size: 120%;
+    font-weight: bolder;
+}
+article {                     /* adjust as needed to separate one article from next */
+	margin: 1em;
+}
+#hotelfig {
+    border: 8px ridge #ffa500;
+    margin-left: 3vw;
+	float: right;
+    box-shadow: 0 0 60px 15px #6a0088;
+}
+footer {                      /* adjust as needed  */
+	margin-top: 2em;
+	text-align: center;
+	font-size: 90%;
+	clear: left;
+    color: #b9f2ff;
+    background: linear-gradient(to right, transparent, rgba(0,0,0,0.8), black, black, rgba(106, 0, 136, 0.97));
+}
+
+figcaption {
+    text-align: center;
+    font-weight: bold;
+    font-size: 85%;
+}
+
+.headingtext {
+    color: #6a0088;
+    font-weight: bold;
+    font-family: "Fresh Marker";
+    letter-spacing: 3px;
+    font-size: 110%
+}
+
+h1 .headingtext {
+    font-size: 1.6em;
+    text-align: center;
+    background-color: rgba(106, 0, 136,0.97);
+    background-size: contain;
+    color: black;
+    padding: 0;
+    margin: auto;
+    padding: 8px 14px;
+    word-spacing: 40px;
+    font-family: "Graffonti";
+}
+
+@font-face {
+    font-family: "Graffonti";
+    src: url('graffonti.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "Fresh Marker";
+    src: url('fresh_marker.ttf') format('truetype');
+}
+
+#main ul li:nth-child(odd) {
+    list-style-image: url('blue_diamond.png');
+}
+
+#main ul li:nth-child(even) {
+    list-style-image: url("gold_bar.png");
+}
