@@ -1,0 +1,215 @@
+/* Common Styles for all pages of Gangsters Retreat Web site */
+/* Note: Refer to grading sheet for details on each of these sections */
+
+/* CSS Final Project by Sebastian Hall */
+
+
+
+/* First rule below should probably be left alone. */
+
+header, nav, section, footer, article {     /* leave this alone */
+	display: block;
+}
+
+
+/* 1. Page Styles: On the "body" you must at least set color, background, margin, padding, font family & size.    
+   ==============  Optionally, you can also set styles on the page wrapper div here if you like.  
+	               But note that you will lose points for any of the above properties that are not set for the body  */
+body {
+    background: #000;
+	color: #ffa500;
+	font-family: "Fresh Marker", Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	margin: 0;
+	padding: 0;
+    letter-spacing: 1px;
+}
+
+#pagewrap {
+    margin: 0 2vw;
+    background: black;
+    box-shadow: 0 0 2vw 1.25vw #6a0088;
+}
+
+#main {
+    margin: auto 3vw;
+}
+
+/* 2. Header (Banner) Styles: For the top header area (which includes the h1) and should be treated as a banner area. 
+   =========================  Possible properties to use here include "background", "height", "padding", "margin",     
+                              and "border".  Feel free to use others instead. Use at least 2 properties.           */
+header {
+    background: url('leopard_pattern.png');
+	color: #FFFFCC;
+	margin: 0;
+    text-align: center;
+	padding: 2em 2em;
+}
+
+/* 3. Heading Styles: For h1-h3 together, set font-family and color; for each separately set font-size using em or %.   
+   =================  Set other styles as needed. Goal is to make heading text stand out from other page text.   
+	                  Use text-shadowing on your headings. One of your heading fonts must be an embedded Web font.  */
+h1, h2, h3 {
+	font-family: "Fresh Marker", "Times New Roman", serif;
+	color: #ffa500;
+}	                   
+h1 {
+    margin: 0;
+    font-size: 6em;
+    text-shadow: 8px 8px 3px #6a0088;
+}
+h2 {
+    font-size: 2.5em;
+    text-shadow: 5px 5px 3px #6a0088;
+}
+h3 {
+    font-size: 1.5em;
+    text-shadow: 5px 5px 3px #6a0088;
+}
+
+/* 4. Intro Paragraph Styles:  use at least 1 property to emphasize 1st paragraph (intro article) 
+   =========================   */
+#intro  p:first-of-type {
+    font-weight: bold;
+    font-size: 110%;
+}
+
+/* 5. Copyright Styles:  use at least 2 properties to de-emphasize the copyright paragraph (footer)  
+   ===================  */
+footer {                      /* adjust as needed  */
+	margin-top: 2em;
+    padding: 5px;
+	text-align: center;
+	font-size: 90%;
+	clear: left;
+    color: #b9f2ff;
+    background: linear-gradient(to right, transparent, black, rgba(106, 0, 136, 0.9));
+}
+
+/* 6. General Link Styles: Style the links outside the nav bar area using at least color and text-decoration  
+   ======================  Write 4 separate rules to affect all 4 link states.  */
+a {
+    text-decoration: underline;
+    color: #6a0088;
+}
+
+a:link {
+    color: #6a0088;
+}
+a:visited {
+    color: #6a0088;
+}
+
+a:active {
+    color: green;
+}
+
+a:hover {
+    color: green;
+}
+
+/* 7. Navigation Bar Styles: Should affect only the nav bar links. Style nav, ul and its li's as needed.           
+   ========================  Style all 4 link states to make active buttons when hovering. Remove bullets from list display. 
+                             Use selectors like "#eventspage #eventslink" to style the link to its own page separately      */ 
+nav ul li a {
+    display: block;
+    font-size: 1.5em;
+    height: 2em;
+    line-height: 2em;
+    background: url('money_repeat_bg.png') repeat;
+    background-size: contain;
+    padding-left: 1em;
+    text-decoration: none;
+    width: 200px;
+}
+
+nav ul li a:hover {
+    color: red;
+}
+
+nav {
+    margin-right: 3vw;
+}
+
+nav ul {
+    list-style-type: none;
+    list-style-image: none;
+}
+
+/* 8. General List Styles: For unordered lists outside of nav bar. Set 2 levels of bullet shapes & 2 levels of bullet images. 
+   ======================  Outer bullets should stand out more than inner bullets. Use Reservations & Contact pages to test. */
+ul {
+    list-style-image: url("blue_diamond.png");
+    list-style-type: disc;
+}
+
+li ul {
+    list-style-image: url("gold_bar.png");
+    list-style-type: square;
+}
+
+/* 9. Testimonial Styles: At least 4 rules to style at least these 4 items: the surrounding testimonials article,    
+   =====================  the 3 testimonial divs, the quotes, and the speakers. Goals: Uniquely style testimonial section 
+	                       itself, emphasize quote, de-emphasize speaker name. Adjust vertical spacing between items.       */
+#testimonials {
+    box-shadow: 0 0 15px 8px #6a0099;
+    display: inline-block;
+    width: 30%;
+    margin: 3vw;
+    padding: 1vw;
+}
+
+.testimonial {
+    border-bottom: 1px solid #ffa500;
+    margin-top: 5vh;
+}
+
+p.quote {
+    font-weight: bold;
+    font-size: 110%;
+    
+}
+
+p.speaker {
+    font-weight: lighter;
+    font-size: 90%;
+}
+
+/* 10. Logo Positioning Styles: Absolute Positioning of logo image using "positionme" id. Leave the existing blank div at 
+   ===========================  bottom of each page in the html & style it to go toward the top of pages where you like.  
+	                            Give it a height & width to match logo image, set image as background, position absolutely */
+#positionme {
+    position: absolute;
+    right: 5vw;
+    top: 30vh;
+    background-image: url('logo.png');
+    width: 600px;
+    height: 150px;
+    background-size: contain;
+}
+
+/* 11. Multi-Column Layout Styles: Use of float, position, margin, and/or padding styles to create a multi-column layout.  
+   ==============================  For help with these styles, see the online "Final Project Layout Guide" handout.     
+	                               For some partial credit here you can use just the layout styles from A3P5              */
+
+#testimonials, #primary {
+    display: inline-block;
+    float: left;
+}
+
+#primary {
+    width: 60%;
+}
+
+
+/* Miscellaneous Styles: Styles that don't fit in any of the above categories but affect multiple pages can go here. 
+   ====================  Use only as needed. This section is optional and does not count for any points.                 */
+
+@font-face {
+    font-family: "Fresh Marker";
+    src: url('fresh_marker.ttf') format('truetype');
+}
+
+#hotelpic {
+    width: 80%;
+}
